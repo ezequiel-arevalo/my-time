@@ -3,7 +3,7 @@
   "publisher": "ezequiel-arevalo",
   "displayName": "my-time",
   "description": "Extension developed for Visual Studio Code. The main functionality is to track how much time is being spent on developing a project or multiple projects individually.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/ezequiel-arevalo/my-time"

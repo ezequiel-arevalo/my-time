@@ -1,40 +1,55 @@
 # ⏱️ My Time
 
-Una extensión para Visual Studio Code que te ayuda a llevar un registro del tiempo que dedicas a tus proyectos.
+A Visual Studio Code extension that helps you track the time you spend on your projects.
 
-## ✨ Características
+##
 
-- **📁 Selección de Proyecto**: Selecciona la carpeta del proyecto en la cual deseas rastrear el tiempo.
-- **📊 Sección de Estadísticas**: Consulta la cantidad de tiempo invertido en cada proyecto.
-- **🛠️ Gestión de Tiempo**: En la sección de estadísticas, puedes ver la información detallada del proyecto o borrar su conteo de tiempo.
+> [!IMPORTANT]  
+> Time is only tracked during interactions with the code. <br />
+> If the editor is open but there is no activity (e.g., when no typing occurs or the cursor isn't moved), time will not be counted.
 
-## 🚀 Instalación
+## ✨ Features
 
-### Instalación desde Visual Studio Code
+- **📁 Project Selection**: Select the project folder you want to track the time for.
+- **📊 Statistics Section**: Check the amount of time spent on each project.
+- **🛠️ Time Management**: In the statistics section, you can view detailed project information or delete its time count.
 
-1. Dirígete al apartado de **Extensiones** en Visual Studio Code.
-2. En la barra de búsqueda, escribe `@sort:name my-time` y selecciona la extensión.
-3. Haz clic en **Instalar** para añadirla a tu editor.
+## 🚀 Installation
 
-### Instalación desde archivo `.vsix`
+### Installation from Visual Studio Code
 
-1. Clona este repositorio o descarga el archivo `.vsix`.
-2. En Visual Studio Code, selecciona **Extensiones** en la barra lateral.
-3. Haz clic en el botón **...** (Más acciones) en la esquina superior derecha y selecciona **Instalar desde VSIX...**.
-4. Navega hasta el archivo `.vsix` descargado y selecciónalo para instalar la extensión.
+1. Go to the **Extensions** section in Visual Studio Code.
+2. In the search bar, type `@sort:name my-time` and select the extension.
+3. Click **Install** to add it to your editor.
 
-## 📚 Uso
+### Installation from `.vsix` file
 
-1. **📂 Selecciona la carpeta del proyecto**: Abre la extensión y elige la carpeta del proyecto que deseas rastrear.
-2. **📈 Consulta las estadísticas**: En la sección de **Statistics**, podrás ver el tiempo total dedicado al proyecto seleccionado.
-3. **🗑️ Administración de tiempo**:
-   - **🔍 Ver información del proyecto**: Haz clic en el proyecto en la sección de estadísticas para ver detalles.
-   - **❌ Borrar conteo de tiempo**: También puedes eliminar el tiempo acumulado de un proyecto si lo deseas.
+1. Clone this repository or download the `.vsix` file.
+2. In Visual Studio Code, select **Extensions** from the sidebar.
+3. Click the **...** (More actions) button in the top right corner and select **Install from VSIX...**.
+4. Navigate to the downloaded `.vsix` file and select it to install the extension.
 
-## 🤝 Contribuciones
+## 📚 Usage
 
-Las contribuciones son bienvenidas. Por favor, envía tus sugerencias o mejoras a través de un _pull request_.
+1. **📂 Select the project folder**: Open the extension and choose the project folder you want to track.
+2. **📈 View Statistics**: In the **Statistics** section, you can see the total time dedicated to the selected project.
+3. **🗑️ Time Management**:
+   - **🔍 View project information**: Click on the project in the statistics section to see details.
+   - **❌ Delete time count**: You can also delete the accumulated time of a project if you wish.
 
-## 📜 Licencia
+## 🔮 Upcoming Features & Advancements
 
-Este proyecto está bajo la Licencia MIT.
+- **📊 Dashboard Design**: A complete dashboard interface for better visualization of your project’s time data.
+- **🏆 Achievements System**: Track streaks through specific goals such as commits, task completions, or even daily usage to boost productivity.
+- **👥 Group Time Management**: Enable project managers and teams to manage and view time across multiple users, allowing for better team collaboration and project tracking.
+- **📅 24-Hour Time Blocks**: Implement the ability to track and view time based on daily blocks, with auto-reset every 24 hours.
+
+Stay tuned for these exciting new features that will enhance your productivity and project management!
+
+## 🤝 Contributions
+
+Contributions are welcome. Please send your suggestions or improvements via a _pull request_.
+
+## 📜 License
+
+This project is licensed under the MIT License.
