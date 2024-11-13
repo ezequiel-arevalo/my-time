@@ -1,0 +1,87 @@
+{
+  "name": "my-time",
+  "publisher": "ezequiel-arevalo",
+  "displayName": "my-time",
+  "description": "Extension developed for Visual Studio Code. The main functionality is to track how much time is being spent on developing a project or multiple projects individually.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ezequiel-arevalo/my-time"
+  },
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./src/js/extension.js",
+  "icon": "./src/icons/logo.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "my-time.addProject",
+        "title": "Add Project from Explorer"
+      },
+      {
+        "command": "my-time.showProjectDetails",
+        "title": "Show Project Details"
+      },
+      {
+        "command": "my-time.deleteProject",
+        "title": "🗑️ Delete"
+      }
+    ],
+    "menus": {
+      "view/item/context": [
+        {
+          "command": "my-time.deleteProject",
+          "when": "viewItem == project",
+          "group": "inline"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "time-tracker",
+          "title": "Time Tracker",
+          "icon": "./src/icons/sand-clock.svg"
+        }
+      ]
+    },
+    "views": {
+      "time-tracker": [
+        {
+          "id": "projectList",
+          "name": "Projects"
+        },
+        {
+          "id": "timeStats",
+          "name": "Statistics"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "projectList",
+        "contents": "\n[Open Project](command:vscode.openFolder) \n[Add new Project](command:my-time.addProject)"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "eslint": "^9.13.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
